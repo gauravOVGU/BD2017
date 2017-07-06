@@ -1,4 +1,3 @@
-Prepare Databases commands:
 [ec2-user@ip-172-31-4-134 ~]$ sudo /usr/share/cmf/schema/scm_prep
 are_database.sh mysql scm scm scm_password
 JAVA_HOME=/usr/java/jdk1.7.0_67-cloudera
