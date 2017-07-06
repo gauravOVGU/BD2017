@@ -1,5 +1,7 @@
+Teragen command:
 time sudo -u neymar hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.blocksize=16M -Dmapred.map.tasks=8 655360 /user/neymar/tgen640
 
+Teragen output:
 [root@ip-172-31-4-134 var]# time sudo -u neymar hadoop jar /opt/c
 loudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-example
 s.jar teragen -Ddfs.blocksize=16M -Dmapred.map.tasks=8 655360 /us
@@ -94,6 +96,7 @@ s=2355969024
 real    12m51.064s
 user    0m8.751s
 sys     0m0.508s
+The command and output of hdfs dfs -ls /user/neymar/tgen640:
 
 [root@ip-172-31-4-134 var]# hdfs dfs -ls /user/neymar/tgen640
 Found 9 items
@@ -115,6 +118,8 @@ Found 9 items
 /neymar/tgen640/part-m-00006
 -rw-r--r--   3 neymar merengues    8192000 2017-07-06 12:34 /user
 /neymar/tgen640/part-m-00007
+
+The command and output to show how many blocks are stored under this directory:
 
 [root@ip-172-31-4-134 var]# hdfs fsck /user/neymar/tgen640
 Connecting to namenode via http://ec2-54-93-177-105.eu-central-1.
