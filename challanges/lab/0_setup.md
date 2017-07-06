@@ -1,9 +1,9 @@
-File : /etc/passwd
+# File : /etc/passwd
 
 neymar:x:2010:2018::/home/neymar:/bin/bash
 ronaldo:x:2016:2017::/home/ronaldo:/bin/bash
 
-File: /etc/group
+# File: /etc/group
 
 neymar:x:2010:
 ronaldo:x:2016:
