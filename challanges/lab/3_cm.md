@@ -1,3 +1,4 @@
+# folders under hdfs
 [root@ip-172-31-4-134 var]# hdfs dfs -ls /user
 Found 6 items
 drwxrwxrwx   - mapred hadoop              0 2017-07-06 11:40 /use
@@ -13,6 +14,7 @@ r/oozie
 drwxr-xr-x   - hdfs   supergroup          0 2017-07-06 11:53 /use
 r/ronaldo
 
+# curl command
 [root@ip-172-31-4-134 var]# curl -u admin:admin 'http://ec2-35-15
 8-126-61.eu-central-1.compute.amazonaws.com:7180/api/v14/hosts'
 {
